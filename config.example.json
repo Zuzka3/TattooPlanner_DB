@@ -1,0 +1,18 @@
+{
+  "db": {
+    "driver": "ODBC Driver 17 for SQL Server",
+    "server": "localhost",
+    "database": "TattooPlanner",
+    "username": "CHANGE_ME",
+    "password": "CHANGE_ME",
+    "trust_server_certificate": true,
+    "encrypt": false
+  },
+  "app": {
+    "default_duration_minutes": 90,
+    "default_hourly_rate": 1200.0,
+    "currency": "CZK",
+    "admin_pin": "123"
+  }
+}
+
