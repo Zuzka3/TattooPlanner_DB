@@ -145,8 +145,6 @@ def create_reservation_flow(config, cnxn, artists: ArtistDAO, styles: StyleDAO, 
     style_rows = styles.list_all()
     chosen_style_ids = ask_style_ids(style_rows)
 
-    simulate = ask_enum("Simulovat selhání platby pro test rollback?", ["YES", "NO"], default="NO") == "YES"
-
     appt_id = appt_service.create_reservation(
         customer_first=first,
         customer_last=last,
@@ -162,7 +160,6 @@ def create_reservation_flow(config, cnxn, artists: ArtistDAO, styles: StyleDAO, 
         notes=notes,
         price_estimate=price,
         style_ids=chosen_style_ids,
-        simulate_failure=simulate,
     )
     print(f"OK! Vytvořena rezervace appointment_id={appt_id}")
     pause()
