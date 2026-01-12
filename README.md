@@ -54,7 +54,7 @@ pip install -r requirements.txt
 {
   "db": {
     "driver": "ODBC Driver 17 for SQL Server",
-    "server": "localhost",
+    "server": "PC000",
     "database": "TattooPlanner",
     "username": "CHANGE_ME",
     "password": "CHANGE_ME",
@@ -69,7 +69,9 @@ pip install -r requirements.txt
   }
 }
 ```
-
+> Poznámka k ODBC driveru:
+> Hodnota `db.driver` musí přesně odpovídat názvu driveru nainstalovanému ve Windows.
+> Nejčastěji je to `ODBC Driver 17 for SQL Server` nebo `ODBC Driver 18 for SQL Server`
 
 ### 5) Spuštění aplikace (přes CMD)
 V kořeni projektu (stále v CMD) spusť:

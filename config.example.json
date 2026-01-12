@@ -1,7 +1,7 @@
 {
   "db": {
     "driver": "ODBC Driver 17 for SQL Server",
-    "server": "localhost",
+    "server": "PC000",
     "database": "TattooPlanner",
     "username": "CHANGE_ME",
     "password": "CHANGE_ME",
